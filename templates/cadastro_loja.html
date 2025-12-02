@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Loja</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body class="container mt-4">
+
+    <!-- Logo -->
+    <div class="text-center mb-4">
+        <img src="/static/logo.png" alt="Logo da Empresa" width="300">
+    </div>
+
+    <!-- Barra superior com botão Início -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1 class="text-primary"></h1>
+        <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">Início</a>
+    </div>
+
+    <h1 class="text-primary">Cadastrar Loja</h1>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Loja</label>
+            <input type="text" name="nome" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">LUC</label>
+            <input type="text" name="endereco" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Contato</label>
+            <input type="text" name="telefone" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-success">Salvar</button>
+    </form>
+</body>
+</html>
